@@ -33,10 +33,9 @@ AUTH_USERS = 1112773045
 sudo_users = [-1112773045]
 bot = Client(
     "bot",
-    bot_token=BOT_TOKEN,
-    api_id=API_ID,
-    api_hash=API_HASH
-)
+    bot_token=os.environ.get("BOT_TOKEN"),
+    api_id=int(os.environ.get("API_ID")),
+    api_hash=os.environ.get("API_HASH"))
 async def exec(cmd):
   proc = await asyncio.create_subprocess_exec(*cmd,
         stdout=asyncio.subprocess.PIPE,
