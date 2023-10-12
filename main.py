@@ -27,12 +27,10 @@ from pyrogram import Client as bot
 from dotenv import load_dotenv
 load_dotenv()
 os.makedirs("./downloads", exist_ok=True)
-API_ID = 952608
-API_HASH = "8d8d0ad8e3d4bcd54420190f57da78ad"
-BOT_TOKEN = "6170442028:AAFjZE4YhF1JksQXKNsOuHhxmS2ayeZhuqE"
 
-AUTH_USERS = 818269274
-sudo_users = [818269274]
+
+AUTH_USERS = 1112773045
+sudo_users = [-1112773045]
 bot = Client(
     "bot",
     bot_token=BOT_TOKEN,
