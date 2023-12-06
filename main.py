@@ -30,7 +30,7 @@ os.makedirs("./downloads", exist_ok=True)
 
 
 AUTH_USERS = 5489477491
-sudo_users = [-5489477491]
+sudo_users = [5489477491]
 bot = Client(
     "bot",
     bot_token=os.environ.get("BOT_TOKEN"),
